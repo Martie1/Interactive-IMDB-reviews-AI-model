@@ -82,7 +82,12 @@ plt.tight_layout()
 plt.show()
 
 
+import joblib
 
+#need to save both model and vectorizer
+joblib.dump(model, "sentiment_model.pkl")
+joblib.dump(vectorizer, "tfidf_vectorizer.pkl")
+print("Model and vectorizer saved successfully :) ")
 
 
 
